@@ -4,7 +4,7 @@ html, body {
   width: 100%;
 }
 
-.content, .info-title, .info-title-header, .logo, nav {
+body, .content, .info-title, .info-title-header, .logo, nav {
   font-family: "Helvetica Neue",sans-serif;
   font-weight: lighter;
 }
