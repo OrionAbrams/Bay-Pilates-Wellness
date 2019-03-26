@@ -4,24 +4,36 @@ html, body {
   width: 100%;
 }
 
-body {
+body, .content, .info-title, .info-title-header, .logo, nav {
   font-family: "Helvetica Neue",sans-serif;
   font-weight: lighter;
 }
 
 header {
   width: 100%;
-  height: 100vh;
-  background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+  height: 400px;
+  background: url(./home1.jpg) no-repeat 50% 50%;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 
 .content {
-  width: 94%;
-  margin: 4em auto;
+  width: 100%;
+  /* margin: 4em auto; */
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
+}
+
+p {
+  width: 90%;
+  margin: auto;
+  font-size: 22px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .logo {
@@ -36,6 +48,7 @@ header {
 }
 
 nav {
+  z-index: 25;
   position: fixed;
   width: 100%;
   line-height: 60px;
@@ -81,6 +94,10 @@ nav ul li a {
   display: none;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* img {
   width: 100%;
@@ -91,8 +108,9 @@ nav ul li a {
   background-image: url("./home1.jpg");
 
   /* Set a specific height */
-  height: 500px; 
+  height: 400px; 
 
+  width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -105,7 +123,7 @@ nav ul li a {
   background-image: url("./home2.jpg");
 
   /* Set a specific height */
-  height: 500px; 
+  height: 400px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -119,7 +137,7 @@ nav ul li a {
   background-image: url("./home3.png");
 
   /* Set a specific height */
-  height: 500px; 
+  height: 400px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -130,18 +148,35 @@ nav ul li a {
 
 .info-title {
   position: absolute;
-  z-index: 1000;
-  margin-top: 200px;
+  z-index: 20;
+  margin-top: 180px;
   width: 100%;
   /* margin-left: 25%; */
   text-align: center;
   color:white;
+}
 
+.info-title-header {
+  position: absolute;
+  z-index: 20;
+  margin-top: 190px;
+  width: 100%;
+  /* margin-left: 25%; */
+  text-align: center;
+  color:white;
 }
 
 .parallax-container {
   width: 100%;
 }
+
+footer {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
 @media(max-width: 886px) {
 
   .logo {
