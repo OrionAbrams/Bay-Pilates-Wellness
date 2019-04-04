@@ -261,7 +261,7 @@ footer {
 }
 
 @media only screen and (max-device-width: 1366px) {
-  header, .nutrition-header, .parallax2, .parallax3 {
+  header, .nutrition-header, .pilates-header, .coaching-header, .parallax2, .parallax3 {
     background-attachment: scroll;
   }
 }
