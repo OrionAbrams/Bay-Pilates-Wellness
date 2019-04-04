@@ -19,3 +19,11 @@ $(window).on("scroll", function () {
       }
 })
 
+$(window).resize(function(){
+      if ($(window).width() < 1040) {
+            $('nav').removeClass('black');
+            $('.logo').css('color', 'white')
+            $('a').css('color', 'white')
+      }
+    });
+
