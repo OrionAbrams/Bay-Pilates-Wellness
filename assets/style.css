@@ -31,6 +31,17 @@ header {
   /* background-size: cover; */
 }
 
+.coaching-header {
+  width: 100%;
+  height: 400px;
+  background: url(./coaching.JPG) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
 h3 {
   width: 90%;
   margin: auto;
@@ -100,6 +111,7 @@ nav ul li a {
   text-decoration: none;
   color: #000058;
   font-size: 20px;
+  font-weight: 400
 }
 
 .menu-icon {
@@ -181,6 +193,9 @@ a, a:hover, a:focus, a:active {
   z-index: 20;
   margin-top: 190px;
   width: 100%;
+  font-size: 32px;
+  font-weight: bolder;
+  opacity: .82;
   /* margin-left: 25%; */
   text-align: center;
   color:white;
@@ -232,7 +247,7 @@ footer {
 }
 
 @media only screen and (max-device-width: 1366px) {
-  .parallax {
+  header, .nutrition-header, .parallax2, .parallax3 {
     background-attachment: scroll;
   }
 }
