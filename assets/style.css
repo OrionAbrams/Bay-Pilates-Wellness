@@ -31,6 +31,17 @@ header {
   /* background-size: cover; */
 }
 
+.pilates-header {
+  width: 100%;
+  height: 400px;
+  background: url(./original_home1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
 .coaching-header {
   width: 100%;
   height: 400px;
@@ -94,7 +105,7 @@ nav ul {
   padding: 0;
   text-align: right;
   margin: 0;
-  padding-right: 40px;
+  padding-right: 60px;
   transition: 1s;
 }
 
@@ -104,20 +115,20 @@ nav.black ul {
 
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;;
+  padding: 16px 20px;;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #000058;
-  font-size: 20px;
-  font-weight: 400
+  font-size: 19px;
+  font-weight: 300
 }
 
 .menu-icon {
   line-height: 60px;
   width: 100%;
-  background: #000;
+  background: #000058;
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -195,7 +206,7 @@ a, a:hover, a:focus, a:active {
   width: 100%;
   font-size: 32px;
   font-weight: bolder;
-  opacity: .82;
+  opacity: .75;
   /* margin-left: 25%; */
   text-align: center;
   color:white;
@@ -212,36 +223,39 @@ footer {
 }
 
 
-@media(max-width: 886px) {
+@media(max-width: 1040px) {
 
   .logo {
         position: fixed;
         top: 0;
         margin-top: 16px;
+        color: white;
   }
 
   nav ul {
         max-height: 0px;
-        background: #000;
+        background: #000058;
   }
 
   nav.black ul {
-        background: #000;
+        background: #000058;
   }
 
   .showing {
         max-height: 34em;
   }
 
-  nav ul li {
+  nav ul li a {
         box-sizing: border-box;
         width: 100%;
         padding: 24px;
         text-align: center;
+        color: white
   }
 
   .menu-icon {
         display: block;
+        background:  #000058;
   }
 
 }
