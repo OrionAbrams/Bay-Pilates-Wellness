@@ -25,5 +25,10 @@ $(window).resize(function(){
             $('.logo').css('color', 'white')
             $('a').css('color', 'white')
       }
+      else if ($(window).width() > 1040 && window.scrollY !== 0) {
+            $('nav').addClass('black');
+            $('.logo').css('color', 'white')
+            $('a').css('color', 'white')
+      }
     });
 
