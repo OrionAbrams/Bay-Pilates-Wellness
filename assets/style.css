@@ -5,8 +5,33 @@ html, body {
 }
 
 body, .content, .info-title, .info-title-header, .logo, nav, h3 {
-  font-family: "Helvetica Neue",sans-serif;
+  font-family: "Roboto", "Helvetica Neue",sans-serif;
   font-weight: lighter;
+}
+
+#contactform {
+  margin: auto;
+  width: 80%
+}
+
+input[type=text], select, input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 header {
@@ -53,13 +78,26 @@ header {
   /* background-size: cover; */
 }
 
-h3 {
+.p-title {
   width: 90%;
   margin: auto;
   text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Roboto", "Arial", sans-serif;
+  letter-spacing: 2px;
+}
 
+.p-title-break {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Roboto", "Arial", sans-serif;
+  letter-spacing: 2px;
 }
 
 .content {
@@ -71,13 +109,17 @@ h3 {
 }
 
 p {
-  width: 90%;
+  width: 80%;
   margin: auto;
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Helvetica", sans-serif
 }
 
+.tabbed-list {
+  margin-left: 10px;
+}
 .logo {
   line-height: 60px;
   position: fixed;
@@ -192,8 +234,11 @@ a, a:hover, a:focus, a:active {
 .info-title {
   position: absolute;
   z-index: 20;
-  margin-top: 180px;
+  margin-top: 190px;
   width: 100%;
+  font-size: 34px;
+  font-weight: bolder;
+  opacity: .8;
   /* margin-left: 25%; */
   text-align: center;
   color:white;
@@ -204,9 +249,9 @@ a, a:hover, a:focus, a:active {
   z-index: 20;
   margin-top: 190px;
   width: 100%;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bolder;
-  opacity: .75;
+  opacity: .8;
   /* margin-left: 25%; */
   text-align: center;
   color:white;
@@ -221,6 +266,44 @@ footer {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
+/* dropdown css */
+.dropbtn {
+  /* background-color: #4CAF50;
+  color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 50;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 @media(max-width: 1040px) {
