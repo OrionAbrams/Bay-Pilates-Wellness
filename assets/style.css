@@ -219,7 +219,91 @@ a, a:hover, a:focus, a:active {
 
 .parallax3 { 
   /* The image used */
-  background-image: url("./home3.png");
+  background-image: url("./home3.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-nutrition-2 { 
+  /* The image used */
+  background-image: url("./nutrition4.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-massage { 
+  /* The image used */
+  background-image: url("./massage.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-massage-2 { 
+  /* The image used */
+  background-image: url("./Foot.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-pilates1 { 
+  /* The image used */
+  background-image: url("./pilates1.png");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-pilates2 { 
+  /* The image used */
+  background-image: url("./pilates2.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-pilates3 { 
+  /* The image used */
+  background-image: url("./pilates3.jpg");
 
   /* Set a specific height */
   height: 400px; 
@@ -251,10 +335,10 @@ a, a:hover, a:focus, a:active {
   width: 100%;
   font-size: 34px;
   font-weight: bolder;
-  opacity: .8;
+  /* opacity: .8; */
   /* margin-left: 25%; */
   text-align: center;
-  color:white;
+  color: #000058
 }
 
 .parallax-container {
