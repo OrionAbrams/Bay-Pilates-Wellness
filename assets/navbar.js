@@ -12,23 +12,30 @@ $(window).on("scroll", function () {
             $('a').css('color', 'white')
       }
 
-      else if ($(window).width() > 1040) {
+      else if ($(window).width() > 930) {
             $('nav').removeClass('black');
+            $('nav ul').css('overflow', 'visible')
             $('.logo').css('color', '#000058')
             $('a').css('color', '#000058')
       }
 })
 
 $(window).resize(function(){
-      if ($(window).width() < 1040) {
+      if ($(window).width() > 930) {
+            $('nav ul').css('overflow', 'visible')
+      }
+      if ($(window).width() < 930) {
             $('nav').removeClass('black');
+            $('nav ul').css('overflow', 'hidden')
             $('.logo').css('color', 'white')
             $('a').css('color', 'white')
+            
       }
-      else if ($(window).width() > 1040 && window.scrollY !== 0) {
+      else if ($(window).width() > 930 && window.scrollY !== 0) {
             $('nav').addClass('black');
             $('.logo').css('color', 'white')
             $('a').css('color', 'white')
       }
+
     });
 
