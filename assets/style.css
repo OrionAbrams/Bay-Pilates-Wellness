@@ -155,7 +155,7 @@ nav ul {
   line-height: 60px;
   list-style: none;
   background: rgba(0, 0, 0, 0);
-  overflow: visible;
+  /* overflow: visible; */
   color: #fff;
   padding: 0;
   text-align: right;
@@ -447,10 +447,12 @@ footer {
 
   nav ul {
         max-height: 0px;
-        overflow: hidden;
+        /* overflow: hidden; */
         background: #000058;
   }
-
+ .toggle-overflow {
+   overflow: hidden;
+ }
   nav.black ul {
         background: #000058;
   }

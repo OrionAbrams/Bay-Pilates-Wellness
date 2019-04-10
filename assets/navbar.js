@@ -1,6 +1,7 @@
 $(document).ready(function () {
       $(".menu-icon").on("click", function () {
             $("nav ul").toggleClass("showing");
+            $('nav ul').toggleClass('toggle-overflow')
       });
 });
 
@@ -14,7 +15,7 @@ $(window).on("scroll", function () {
 
       else if ($(window).width() > 1000) {
             $('nav').removeClass('black');
-            $('nav ul').css('overflow', 'visible')
+            $('nav ul').toggleClass('toggle-overflow')
             $('.logo').css('color', '#000058')
             $('a').css('color', '#000058')
       }
@@ -26,7 +27,7 @@ $(window).resize(function(){
       }
       if ($(window).width() < 1000) {
             $('nav').removeClass('black');
-            $('nav ul').css('overflow', 'hidden')
+            $('nav ul').toggleClass('toggle-overflow')
             $('.logo').css('color', 'white')
             $('a').css('color', 'white')
             
