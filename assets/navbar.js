@@ -1,8 +1,19 @@
 $(document).ready(function () {
+      $(".hidden-submenu").hide()
       $(".menu-icon").on("click", function () {
             $("nav ul").toggleClass("showing");
             $('nav ul').toggleClass('toggle-overflow')
       });
+      $(".dropdown-toggle").on("click", function () {
+            if ($(window).width() < 1000) {
+                  $(".show-submenu").hide()
+                  $(".hidden-submenu").show()
+            }
+      })
+      $(".back-to-main").on("click", function () {
+            $(".hidden-submenu").hide()
+            $(".show-submenu").show()
+      })
 });
 
 // Scrolling Effect
@@ -21,7 +32,7 @@ $(window).on("scroll", function () {
       }
 })
 
-$(window).resize(function(){
+$(window).resize(function () {
       if ($(window).width() > 1000) {
             $('nav ul').css('overflow', 'visible')
       }
@@ -30,7 +41,7 @@ $(window).resize(function(){
             $('nav ul').toggleClass('toggle-overflow')
             $('.logo').css('color', 'white')
             $('a').css('color', 'white')
-            
+
       }
       else if ($(window).width() > 1000 && window.scrollY !== 0) {
             $('nav').addClass('black');
@@ -38,5 +49,5 @@ $(window).resize(function(){
             $('a').css('color', 'white')
       }
 
-    });
+});
 
