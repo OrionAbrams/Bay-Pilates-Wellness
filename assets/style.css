@@ -497,7 +497,7 @@ footer {
 
 
 @media only screen and (max-device-width: 1366px) {
-  header, .nutrition-header, .pilates-header, .coaching-header, .parallax2, .parallax3, .parallax-nutrition-2, .parallax-massage, .parallax-massage-2, .parallax-pilates1, .parallax-pilates2, .parallax-pilates3 {
+  header, .nutrition-header, .pilates-header, .coaching-header, .parallax2, .parallax3, .parallax4, .parallax-nutrition-2, .parallax-massage, .parallax-massage-2, .parallax-pilates1, .parallax-pilates2, .parallax-pilates3 {
     background-attachment: scroll;
   }
   nav ul li {
