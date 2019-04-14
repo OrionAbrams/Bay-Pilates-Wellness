@@ -311,6 +311,21 @@ a, a:hover, a:focus, a:active {
   background-size: cover;
 }
 
+
+.massage3 { 
+  /* The image used */
+  background-image: url("./massage3.jpg");
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .parallax-pilates1 { 
   /* The image used */
   background-image: url("./pilates1.png");
@@ -437,6 +452,10 @@ footer {
 
 .white-text {
   color: white;
+}
+
+.dropdown-menu {
+  top: 70px;
 }
 
 
