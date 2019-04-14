@@ -45,6 +45,17 @@ header {
   /* background-size: cover; */
 }
 
+.corporate {
+  width: 100%;
+  height: 400px;
+  background: url(./corporate.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
 .nutrition-header {
   width: 100%;
   height: 400px;
@@ -497,7 +508,7 @@ footer {
 
 
 @media only screen and (max-device-width: 1366px) {
-  header, .nutrition-header, .pilates-header, .coaching-header, .parallax2, .parallax3, .parallax4, .parallax-nutrition-2, .parallax-massage, .parallax-massage-2, .parallax-pilates1, .parallax-pilates2, .parallax-pilates3 {
+  header, .nutrition-header, .pilates-header, .coaching-header, .parallax2, .parallax3, .parallax4, .parallax-nutrition-2, .parallax-massage, .parallax-massage-2, .parallax-pilates1, .parallax-pilates2, .parallax-pilates3, .corporate {
     background-attachment: scroll;
   }
   nav ul li {
