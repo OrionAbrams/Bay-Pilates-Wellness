@@ -458,6 +458,13 @@ footer {
   top: 70px;
 }
 
+.headshot {
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 
 
 
@@ -466,6 +473,11 @@ footer {
 
   .dropdown:hover .dropdown-menu {
     display: none;
+  }
+
+  .headshot {
+    width: 100%;
+    margin-left: 0;
   }
 
   .logo, .logo2 {
@@ -535,6 +547,10 @@ footer {
   }
   nav ul {
     padding-right: 30px;
+  }
+  .headshot {
+    width: 100%;
+    margin-left: 0
   }
 }
 
